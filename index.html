@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neuroscience Literature</title>
+    <script>
+    async function copyBibTeX(key) {
+        try {
+            const response = await fetch('bibtex.bib');
+            const text = await response.text();
+            const regex = new RegExp(`@.*?{${key},[\\s\\S]*?}`, 'g');
+            const match = text.match(regex);
+            if (match) {
+                await navigator.clipboard.writeText(match[0]);
+                alert('BibTeX entry copied to clipboard!');
+            }
+        } catch (err) {
+            console.error('Failed to copy:', err);
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="readme">
+        <!-- GitHub会自动渲染README.md的内容到这里 -->
+    </div>
+</body>
+</html>
