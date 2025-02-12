@@ -27,8 +27,6 @@ You can paste the bib once clicking on the [bib].
 
  - Beyond Backpropagation: Bilevel Optimization Through Implicit Differentiation and Equilibrium Propagation [bib](bibtex.bib#zucchet2022beyond)
     
- - Beyond Backpropagation: Bilevel Optimization Through Implicit Differentiation and Equilibrium Propagation <a href="javascript:void(0)" onclick="copyBibTeX('zucchet2022beyond')">[bib]</a>
-
 ## Contribution
 
 This code and structure is heavily inspired by https://github.com/BerenMillidge/Predictive_Coding_Papers.
